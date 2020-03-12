@@ -27,6 +27,7 @@ class Show < ActiveRecord::Base
   def self.shows_by_alphabetical_order
     # Show.all.sort
     change = Show.all
-    change.sort {|anythinghere| a <=> b puts "#{anythinghere}" }
+    change.sort {|anythinghere| a <=> b puts "#{anythinghere}"}
+    change
   end
 end
