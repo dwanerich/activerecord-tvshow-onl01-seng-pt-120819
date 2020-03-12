@@ -25,8 +25,6 @@ class Show < ActiveRecord::Base
   end
   
   def self.shows_by_alphabetical_order
-    sorted = change.sort
-    sorted = change.sort { |a, b| a <=> b }
-    sorted
+    Show.all.sort
   end
 end
