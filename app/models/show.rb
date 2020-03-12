@@ -5,7 +5,7 @@ class Show < ActiveRecord::Base
   end
   
   def self.most_popular_show
-    # .where("rating = ?", 9)
+    self.where("rating = ?", 9)
   end
   
   def self.lowest_rating
@@ -21,7 +21,7 @@ class Show < ActiveRecord::Base
   end
   
   def self.popular_shows
-    # where("rating > ?", 5)
+    self.where("rating > ?", 5)
   end
   
   def self.shows_by_alphabetical_order
