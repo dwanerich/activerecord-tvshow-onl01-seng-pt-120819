@@ -28,5 +28,6 @@ class Show < ActiveRecord::Base
     # Show.all.sort
     change = Show.all
 change.sort {|anythinghere| a <=> b puts "Ascending #{anythinghere}" }
+change
   end
 end
